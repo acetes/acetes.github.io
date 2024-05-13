@@ -1,0 +1,128 @@
+<h1>
+Quick Start Guide
+</h1>
+<p>This is a ~15 minute guide for people who have experience with mainstream strategy games.</p>
+
+<h2>The Basics</h2>
+<div class="mcard">
+Battleship Avalon works similar to most mainstream strategy and RTS titles. There is a "Map Mode" where you manage your interstellar empire on a map of the Milky Way, and a "Battle Mode", where you command your fleets against enemies.
+</div>
+<div class="mcard">
+In both the Map and Battle modes, you can select your fleets by dragging a box over them, or clicking on them directly. You can tell a fleet to move to a certain position by right clicking on your intended target. You can click ships in the central fleet info displayer, and then delete or split those selected ships away. You can hit "backspace" to stop the movement of a fleet, however you cannot stop a fleet on its path to an immediate neighbor once time has already passed. You can hit the "G" key to group up all fleets into larger fleets.
+</div>
+<div class="mcard">
+You can click on stars to see data about the star system and to recruit ships there. You can click on planets to see those planets and build or upgrade colonies or mines there. You can also click on the picture of the flag to enter into negotiations with that Government.
+<br>
+The rest of the tabs on the top are fairly self-explanatory. You can always see information about what a button does by simply hovering over it.
+</div>
+<div class="mcard">
+On the left side are "hints", which remind you of things you can or should be doing. You can left click on these hints to take you to where you can perform the action, and right click to dismiss the hints.
+<br>
+On the right side is a list of overlays which provide information about the map. On the bottom right, you can search for star systems and governments.
+</div>
+
+<h2>Unique Mechanics</h2>
+
+<div class="mcard">
+<h4>Government Forms, Populism and Centralization</h4>
+Every government has two numbers between 0 and 100 called "populism" and "centralization". "Populism" is how your government rules. High populism means it rules through charisma and appealing to the common people, medium populism means it rules through law, and low populism means it rules through tradition. "Centralization" means how centralized the decisionmaking of your government is.
+<br><br>
+What these numbers mean in practice is that TODO
+<br><br>
+Put together, your populism and centralization determine the <b>Government Form</b> that you have. There are 9 possible government forms, each favoring a certain playstyle. Governments that have similar populism and centralization to yours will also have better diplomatic relations to you.
+</div>
+
+<div class="mcard">
+<h4>Corruption from size</h4>
+Corruption from size represents the inefficiencies that your government incurs from administrating many colonies and mines at once. It will increase every time you take control of a colony or mine, but can be reduced by effects and technologies. Nevertheless, corruption from size does not care about how populous or profitable your world or mines are, and reducing your centralization can reduce your corruption, hence allowing you to take more planets and mines.
+</div>
+<div class="mcard">
+<h4>Reputation</h4>
+Reputation is a number between 0 and 100 that represents how respected and liked your government is by humanity at large. You lose reputation every time you declare wars and take territory, but your reputation will gradually tend towards a "Resting Reputation", which is normally 50 but can be modified by different effects and technologies. If your reputation falls below 20 then nobody will want to ally you; if it falls below 10 then you may be randomly declared war on by everyone around you.
+</div>
+<div class="mcard">
+<h4>Manpower</h4>
+Battleship Avalon takes place in a post-apocalypse where humans, let alone spacefaring ones, are hard to come by. Manpower represents how many humans you can use to pilot and maintain your fleets. You gain manpower at a constant rate based off the population of your planets and mines, and you can increase this rate with various effects.
+<br><br>
+Every time you construct a ship, the manpower used is deduced from the population of your planets. If you delete ships in peacetime, the manpower is returned to your populations.
+</div>
+<div class="mcard">
+<h4>Economics</h4>
+In Battleship Avalon, your citizens on planets will automatically adjust the products they are making, educate themselves, and consume resources on their own. Education is important in determining the productivity of your populations, as more educated people can produce more complex and profitable goods like spaceship parts and machinery.
+</div>
+<div class="mcard">
+<h4>Terraforming</h4>
+Each planet has a "Terra Number" between 0 (uninhabitable) and 12 (like Earth) determining how easily humans can live on it. This number is decided by the Gravity, Atmosphere, Radiation, and Temperature of a planet, where each is scored out of 3 points. You can partially terraform each category to improve the score by +1, then fully terraform a category, which increases the score in the category to 3.
+</div>
+<div class="mcard">
+<h4>Executive Decrees</h4>
+Every month you gain "executive power" up to 100. Executive power can be spent to instantaneously take actions that would normally take . You can make Executive Decrees by clicking on the top-center button called "decrees". More centralized forms of governments get +50% or +100% to executive power monthly gain.
+</div>
+<div class="mcard">
+<h4>Special Resources</h4>
+Certain valuable resources are distributed around the galaxy, which you can build mines to extract.
+</div>
+<div class="mcard">
+<h4>Diplomacy</h4>
+You can start diplomacy with a government either by clicking on one of their star systems and clicking on their flag in the lower left popup, or by clicking on the "diplomacy" tab, then click on the government and clicking "negotiate".
+<br><br>
+You negotiate with other governments by creating Treaties, which can include many different terms at once.
+<br><br>
+We can only demand or offer star systems if they are CONTIGUOUS, meaning that they will touch other star systems of their government once everything has changed hands.
+<br><br>
+We can guess how inclined a government will be to accept our treaty, which will be displayed as "No","Unlikely","Maybe","Probably","Yes". If it says "Unlikely" or "Maybe", that is a sign that we can add in something to sweeten the deal and convince them to accept.
+</div>
+
+<h2>Battles and Fleets</h2>
+
+<div class="mcard">
+<h4>Battles on the Map</h4>
+When a battle involving 3 or more of your ships begins, the game will pause and you will be prompted to enter the battle. If you choose to accept, you will fight the battle manually. If you decline, the battle will automatically resolve. Battles with fewer than 3 of our ships involved cannot be joined. You should group up your ships before going to war in order to have the best chances.
+</div>
+
+<div class="mcard">
+<h4>Fleet Weight</h4>
+The weight of a fleet is how heavy it is. Light ships generally contribute 1 "weight", medium ships 3, and heavy ships 8. Special ships have their own weights. Your government has a <b>Maximum Fleet Weight</b> which determines the maximum weight of fleets on the map, as well as the maximum weight of ships which you can use in a battle.
+</div>
+
+<div class="mcard">
+<h4>Ships</h4>
+There are three basic types of ships. Light ships are fast and cheap, and can overwhelm heavy ships. Medium ships deal area damage, and can kill off swarms of light ships easily. Heavy ships deal very high and concentrated damage, and are good at killing medium ships.
+<br>
+In addition to this, there are a number of special types of ships which can be researched under "Astronautics" technologies.
+</div>
+
+<div class="mcard">
+<h4>Battle Mode</h4>
+Once you enter a battle, you will be prompted to split your ships into groups.
+</div>
+
+<div class="mcard">
+<h4>Retreating</h4>
+After 60 seconds, you can retreat ships away from a battle. After the battle is over, the fleets of these ships will be in "Retreat" mode on the map, and you will not be able to control them.
+<br>
+In retreat mode, fleets will move to your capitol. Once they reach your capitol, they will stop retreating and become controllable again.
+</div>
+
+<div class="mcard">
+<h4>Healing and Attrition</h4>
+Fleets that stay in uncontrolled space for too long will suffer attrition. Fleets that stay in your territory will slowly repair themselves automatically.
+</div>
+
+<div class="mcard">
+<h4>Fortifications</h4>
+TODO
+</div>
+
+<h2>Getting Started</h2>
+<div class="mcard">
+Once you've started your first game, here a few things to check:
+<ul>
+  <li>Go to the "technology" tab and start researching a technology</li>
+  <li>Go to the "government" tab and review your budget. Decide if you can build or should delete some ships from your fleet</li>
+  <li>Go to the "systems" tab, find your most valuable planet or mine on the dropdown menu, and check for buildings to construct</li>
+  <li>Go to "decrees" in the top-center and check if there are decrees you can use</li>
+  <li>Look at your neighbors and find someone to begin allying or trading with</li>
+</ul>
+</div>
+<br><br>

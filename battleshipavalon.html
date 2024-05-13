@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #111111; /* Dark background color */
+            color: #fff; /* Light text color */
+        }
+
+        .sidebar {
+            background-color: #212529; /* Dark sidebar color */
+            padding: 20px;
+            height: 100vh;
+        }
+
+        .sidebar a {
+            color: #fff; /* Light text color for sidebar links */
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid #fff; /* White border between tabs */
+        }
+
+        .sidebar a:last-child {
+            border-bottom: none; /* Remove border for the last tab */
+        }
+
+        .sidebar a:hover {
+            background-color: #454d55; /* Darker background color on hover */
+        }
+
+        .sidebar .nav-link.active {
+            background-color: #007bff; /* Active tab background color */
+            color: #fff; /* Light text color for active tab */
+        }
+
+        .sidebar-icons {
+            font-size: 24px; /* Icon size */
+            margin-right: 10px; /* Margin between icon and text */
+        }
+
+        .blog-header {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40; /* Dark background color for header */
+        }
+
+        .blog-header h1 {
+            color: #fff; /* Light text color for header text */
+        }
+
+        .card {
+            background-color: #454d55; /* Dark background color for card */
+            color: #fff; /* Light text color for card content */
+            margin-top: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #343a40; /* Dark background color for footer */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .mcard {
+            background-color: #222222;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <title>Recipe Tutorial</title>
+</head>
+<body>
+
+<div class="blog-header">
+    <h1>Battleship Avalon</h1>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <nav class="col-md-2 d-none d-md-block sidebar" id="sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" onclick="changeContent('home', this)">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="changeContent('quickstart', this)">
+                            Quick-Start Guide
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="changeContent('fulltutorial', this)">
+                            Full Tutorial
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="changeContent('devfaqs', this)">
+                            Development FAQs
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main content -->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" id="mainContent">
+            <div class="mt-4">
+                <h2>Home</h2>
+            </div>
+        </main>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>test, 2024</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    async function getContent(name) {
+        const response = await fetch(name+'.txt');
+        const contentData = await response.text();
+        return contentData;
+    }
+
+    async function changeContent(page, element) {
+        // Remove the 'active' class from all sidebar links
+        const sidebarLinks = document.querySelectorAll('.nav-link');
+        sidebarLinks.forEach(link => link.classList.remove('active'));
+
+        // Highlight the clicked sidebar link
+        element.classList.add('active');
+
+        const contentData = await getContent(page);
+        console.log("got data '" + page + "' " + contentData);
+
+        const mainContent = document.getElementById('mainContent');
+        mainContent.innerHTML = contentData;
+    }
+
+    window.onload = async () => {
+        await getContent("home");
+    };
+</script>
+
+</body>
+</html>
