@@ -79,7 +79,7 @@
             margin-bottom: 10px;
         }
     </style>
-    <title>Recipe Tutorial</title>
+    <title>Battleship Avalon</title>
 </head>
 <body>
 
@@ -150,7 +150,7 @@
         element.classList.add('active');
 
         const contentData = await getContent(page);
-        console.log("got data '" + page + "' " + contentData);
+        //console.log("got data '" + page + "' " + contentData);
 
         const mainContent = document.getElementById('mainContent');
         mainContent.innerHTML = contentData;
