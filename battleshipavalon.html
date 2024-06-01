@@ -99,18 +99,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="changeContent('quickstart', this)">
-                            Quick-Start Guide
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#" onclick="changeContent('fulltutorial', this)">
                             Full Tutorial
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" onclick="changeContent('devfaqs', this)">
-                            Development FAQs
+                            Development
                         </a>
                     </li>
                 </ul>
@@ -157,7 +152,7 @@
     }
 
     window.onload = async () => {
-        await getContent("fulltutorial");
+        await changeContent("fulltutorial", this);
     };
 </script>
 
