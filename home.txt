@@ -1,2 +1,0 @@
-<h2>Home</h2>
-<p>Welcome to the GitHub site for <i>Battleship Avalon</i>.</p>
