@@ -10,7 +10,7 @@
             color: #fff;
         }
         .sidebar {
-            background-color: #212529;
+            background-color: #011D39;
             padding: 20px;
             height: 100vh;
         }
@@ -27,8 +27,11 @@
         .sidebar a:hover {
             background-color: #454d55;
         }
+        .nav-link {
+            padding-left: 10px;
+        }
         .sidebar .nav-link.active {
-            background-color: #007bff;
+            background-color: #024d97;
             color: #fff;
         }
         .sidebar-icons {
@@ -67,38 +70,47 @@
             border-radius: 15px;
             margin-bottom: 10px;
         }
+        #sidebar {
+          padding-left: 0;
+          padding-right: 0;
+          margin-left:0;
+          margin-right:0;
+          padding-top:0;
+        }
+        a {
+            padding-left: 10px;
+        }
     </style>
     <title>Battleship Avalon</title>
 </head>
 <body>
-
-<div class="blog-header">
-    <h1>Battleship Avalon</h1>
-</div>
 
 <div class="container-fluid">
     <div class="row">
         <nav class="col-md-2 d-none d-md-block sidebar" id="sidebar">
             <div class="sidebar-sticky">
                 <ul class="nav flex-column">
+                    <li>
+                        <img src="images/vertical_capsule.png" class="img-fluid w-100">
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="battleshipavalon.html">
-                            Home
+                        <a class="nav-link" href="battleshipavalon.html" style="padding-left: 10px;">
+                            <b>Home</b>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="battleshipavalontutorial.html">
-                            Tutorial
+                        <a class="nav-link" href="battleshipavalontutorial.html" style="padding-left: 10px;">
+                            <b>Tutorial</b>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="battleshipavalondevelopment.html" style="padding-left: 10px;">
+                            <b>Development</b>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="battleshipavalondevelopment.html">
-                            Development
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="battleshipavalonsupport.html">
-                            Support
+                        <a class="nav-link" href="battleshipavalonsupport.html" style="padding-left: 10px;">
+                            <b>Support</b>
                         </a>
                     </li>
                 </ul>
@@ -110,13 +122,12 @@
             <div class="mt-4">
                 Q: What changes are you planning to make for early access?
                 <br>
-                A: I would like to make the following changes
+                A: Depending on whether I am able to work full time as a game developer or not, I would like to make the following changes
                 <ul>
                     <li>Giving every starting faction a unique mission tree and mechanic or ship line. Making ship models more distinguishable and better quality</li>
                     <li>Adding modding and localization support making it very easy to do overhaul mods for different settings</li>
                     <li>Making the game more balanced and fun, and fixing bugs (obviously)</li>
                 </ul>
-                Depending on whether I can work full time or not, it may take a few months or years for this to happen
             </div>
             <div class="mt-4">
                 In leiu of using Steam forums, you can use these forms

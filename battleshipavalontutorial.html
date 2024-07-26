@@ -10,7 +10,7 @@
             color: #fff;
         }
         .sidebar {
-            background-color: #212529;
+            background-color: #011D39;
             padding: 20px;
             height: 100vh;
         }
@@ -27,8 +27,11 @@
         .sidebar a:hover {
             background-color: #454d55;
         }
+        .nav-link {
+            padding-left: 10px;
+        }
         .sidebar .nav-link.active {
-            background-color: #007bff;
+            background-color: #024d97;
             color: #fff;
         }
         .sidebar-icons {
@@ -67,38 +70,47 @@
             border-radius: 15px;
             margin-bottom: 10px;
         }
+        #sidebar {
+          padding-left: 0;
+          padding-right: 0;
+          margin-left:0;
+          margin-right:0;
+          padding-top:0;
+        }
+        a {
+            padding-left: 10px;
+        }
     </style>
     <title>Battleship Avalon</title>
 </head>
 <body>
-
-<div class="blog-header">
-    <h1>Battleship Avalon</h1>
-</div>
 
 <div class="container-fluid">
     <div class="row">
         <nav class="col-md-2 d-none d-md-block sidebar" id="sidebar">
             <div class="sidebar-sticky">
                 <ul class="nav flex-column">
+                    <li>
+                        <img src="images/vertical_capsule.png" class="img-fluid w-100">
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="battleshipavalon.html">
-                            Home
+                        <a class="nav-link" href="battleshipavalon.html" style="padding-left: 10px;">
+                            <b>Home</b>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="battleshipavalontutorial.html">
-                            Tutorial
+                        <a class="nav-link active" href="battleshipavalontutorial.html" style="padding-left: 10px;">
+                            <b>Tutorial</b>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="battleshipavalondevelopment.html">
-                            Development
+                        <a class="nav-link" href="battleshipavalondevelopment.html" style="padding-left: 10px;">
+                            <b>Development</b>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="battleshipavalonsupport.html">
-                            Support
+                        <a class="nav-link" href="battleshipavalonsupport.html" style="padding-left: 10px;">
+                            <b>Support</b>
                         </a>
                     </li>
                 </ul>
