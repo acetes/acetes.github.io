@@ -124,7 +124,7 @@
 <h1>Quick Guide</h1>
 
 <div class="mcard">
-In Battleship Avalon, you play as a former colony of Earth with the goal of taking control of the Milky Way. There is a "Map Mode" where you manage your interstellar government on a map, and a "Battle Mode", where you command your ships against enemy fleets.
+In Battleship Avalon, you play as a spacefaring government with the goal of taking control of the Milky Way. There is a "Map Mode" where you manage your sectors on a map, and a "Battle Mode", where you command your ships against enemy fleets.
 <br>
 You start at year 0 (after Earth) and the game ends on year 100. If you have the highest rank (which can be viewed in the diplomacy tab and combines military economic and technology scores) at the end of the game, you win the game. If you conquer every star system before then, you also win the game.
 </div>
@@ -134,22 +134,22 @@ You start at year 0 (after Earth) and the game ends on year 100. If you have the
 <img style="width:90%; max-width:1000px" src="./images/mainview.jpg">
 
 <ol>
-  <li>Bottom Stats - Shows your executive power, money, research, and manpower</li>
-  <li>Fleet Selection - Shows the ships of one central fleet, and on the right side shows other fleets that you selected from the map. You can click on the side fleets to select them. You can click on ships in the central fleet to select or deselect them, then you can delete them or split them into another fleet.</li>
+  <li>Bottom Stats - Shows your basic resources: your executive power, money, research, and manpower</li>
+  <li>Fleet Selection - Shows selected fleets. You can click on smaller fleets on the right side to select on in the center. You can click on ships in the center to split or delete them. You can click on the button with two arrows to transfer ships between fleets</li>
   <li>Major Fleets - Click to zoom to any of your major fleets.</li>
   <li>Map Overlays - Shows information about star systems graphically on the map</li>
   <li>Game Speed - Shows the current date and how fast the game is playing</li>
   <li>Game Menus - The main menu and music player menu</li>
   <li>Interfaces - Interfaces that let you see other information. Hover over each button to see what they do. They can be accessed via the F1,F2,F3... keys</li>
   <li>Hints - Shows important things that you might be forgetting to do, left click on a hint to go to the relevant action and right click to dismiss the hint</li>
-  <li>Selected Star System - The star system you clicked on. If this star system belongs to a foreign government, you can click on their flag to enter negotiations with them. On the list it will show any planets that you can build mines or colonies on, and you can click on them to view and interact with them. If you click on "Recruit" (if it's a star system owned by you and with a mine or colony) you can recruit ships from this star system. Alternatively, if it's an adjacent unoccupied star system, you can click "Colonize" to begin colonizing it.</li>
+  <li>Selected Star System - The star system you clicked on. If this star system belongs to a foreign government, you can click on their flag to enter negotiations with them. It will show any planets that you can build mines or colonies on, and you can click on them to view and interact with them. If you click on "Recruit" (if it's a star system owned by you and with a mine or colony) you can recruit ships from this star system. Alternatively, if it's an adjacent unoccupied star system, you can click "Colonize" to begin colonizing it.</li>
 </ol>
 </div>
 
 <div class="mcard">
 <img style="width:90%; max-width:1000px" src="./images/mapview.jpg">
-<p>You can click on star systems directly, which will also select your fleets present there.</p>
-<p>You can also click on your own fleets and right click to send them anywhere. You can shift+right click to tell a fleet to go to one star system, then another, in order. You can press backspace to stop fleets from moving, but once they have started moving (meaning after one turn has passed), they must finish their current movement to the next system.</p>
+<p>You can left click on star systems directly, which will also select your fleets present there.</p>
+<p>You can also left click on your own fleets and right click to send them anywhere. You can shift+right click to add to a fleet's existing path. You can press backspace to stop fleets from moving, but once they have started moving they will lock into their current movement.</p>
 <p>You can also hold down the left mouse and drag a box over fleets to select all of them, or hold shift+left click to select multiple fleets one at a time.</p>
 <p>You can press "G" to group together all selected fleets that are in the same system and not moving.</p>
 </div>
@@ -163,14 +163,14 @@ You have four resources at your disposal, indicated at the bottom of the user in
   <li><b>Money</b> - Money is used to maintain fleets and build and upgrade planetary colonies and mines.</li>
   <li><b>Executive Power</b> - Executive Power increases every month and can be used to instantly perform actions that otherwise take time. Governments that are more centralized will gain more executive power.</li>
   <li><b>Research</b> - Research accumulates and allows you to unlock technologies. Switching your research will cause you to lose all of your current progress.</li>
-  <li><b>Manpower</b> - Manpower allows you to recruit ships. You gain it based on the size of your population.</li>
+  <li><b>Manpower</b> - Manpower allows you to recruit and repair ships. You gain it based on the size of your population. Ships cost half as much to repair as they do to recruit.</li>
 </ul>
 
 </div>
 
 
 <div class="mcard">
-<h2>Advanced Mechanics</h2>
+<h2>Mechanics</h2>
 
 <h3>Government</h3>
 
@@ -209,7 +209,6 @@ You have four resources at your disposal, indicated at the bottom of the user in
 <div class="mcard">
 <p>When your fleet runs into an enemy fleet (unless either one is retreating), the game will pause and you will be prompted to enter the battle. If you accept, you will fight the battle directly, if you decline the battle will resolve on its own. You will not be prompted to enter very small battles (involving only 1-2 ships on one side).</p>
 
-
 <p>Before the battle begins, you can choose how to group your ships into units. You can do this by setting the number of light, medium, and heavy ship groups you want. Making more groups will give you more control but also make the battle more tedious and complicated.</p>
 
 <img style="width:40%; max-width:500px" src="images/enterbattle.jpg">
@@ -226,7 +225,7 @@ You have four resources at your disposal, indicated at the bottom of the user in
 
 <img style="width:40%; max-width:500px" src="images/retreat.jpg">
 
-<p>Fleets in uncontrolled territory will suffer small amounts of attrition, and fleets in friendly territory will slowly repair.</p>
+<p>Fleets in uncontrolled territory will suffer small amounts of attrition, and fleets in friendly territory will slowly repair, assuming you have the manpower to repair them.</p>
 
 </div>
 
