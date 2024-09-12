@@ -163,7 +163,7 @@ You have four resources at your disposal, indicated at the bottom of the user in
   <li><b>Money</b> - Money is used to maintain fleets and build and upgrade planetary colonies and mines.</li>
   <li><b>Executive Power</b> - Executive Power increases every month and can be used to instantly perform actions that otherwise take time. Governments that are more centralized will gain more executive power.</li>
   <li><b>Research</b> - Research accumulates and allows you to unlock technologies. Switching your research will cause you to lose all of your current progress.</li>
-  <li><b>Manpower</b> - Manpower allows you to recruit and repair ships. You gain it based on the size of your population. Ships cost half as much to repair as they do to recruit.</li>
+  <li><b>Manpower</b> - Manpower allows you to recruit and repair ships. You gain it based on the size of your population. Ships cost half as much manpower to repair as they do to recruit.</li>
 </ul>
 
 </div>
@@ -180,11 +180,11 @@ You have four resources at your disposal, indicated at the bottom of the user in
 
 <p><b>Fleets</b></p>
 
-<p>Every ship has a "weight", which is generally 1 for light ships, 3 for medium ships, and 10 for heavy ships. The sum of these weights is the weight of your Fleet, and you are limited to a <b>Maximum Fleet Weight</b> which determines the size of fleets as well as how many ships you can bring into a battle.</p>
+<p>Every ship has a "weight", which is generally 1 for light ships, 3 for medium ships, and 10 for heavy ships. The sum of these weights is the weight of your Fleet, and you are limited to a <b>Maximum Fleet Weight</b> which determines the size of fleets as well as how many ships you can bring into a battle. For example, if your max fleet weight is 50 but you have a bunch of fleets with a total weight of 200 attacking somewhere, only 50 weight will be able to actually fight the battle once you hit "enter battle".</p>
 
 <p><b>War and Conquest</b></p>
 
-<p>When you declare war on someone, you can capture their territory by sending fleets there in order to take away part of their income and force them to agree to a peace treaty. In this peace treaty, you can take star systems <b>which you have captured and are adjacent to your existing territory!</b> captured star systems which would not touch your existing territory can't be taken in a peace deal.</p>
+<p>When you declare war on someone, you can capture their territory by sending fleets there in order to take away part of their income and force them to agree to a peace treaty. In this peace treaty, you can take star systems <b>which you have captured and are adjacent to your existing territory</b>, captured star systems which would not touch your existing territory can't be taken in a peace deal.</p>
 
 <p>When a country begins plotting a war against you or an ally of yours, you may be alerted that this is happening. By default you will be alerted 50% of the time. With upgrades to espionage, you get alerted 75% or 100% of the time.</p>
 
@@ -212,7 +212,7 @@ You have four resources at your disposal, indicated at the bottom of the user in
 
 <p><b>Immigration</b></p>
 
-<p>The central planetary systems are overpopulated with refugees from Earth and have stagnated due to a reliance on it. They will produce emigrants which can go to your planets seeking a better life. However as time goes on there will not be enough emigrants available. So for example a building giving "up to 100 immigrants per month" will give fewer as time goes on, because everyone will build such a building.</p>
+<p>The central planetary systems are overpopulated with refugees from Earth and have technologically stagnated. They will produce emigrants which can go to your planets seeking a better life. However, as time goes on, there will not be enough emigrants available. So for example a building giving "up to 100 immigrants per month" will give fewer as time goes on, because everyone will build such a building but there won't be enough emigrants to supply all of them with 100/month.</p>
 
 </div>
 
@@ -221,7 +221,7 @@ You have four resources at your disposal, indicated at the bottom of the user in
 
 
 <div class="mcard">
-<p>When your fleet runs into an enemy fleet (unless either one is retreating), the game will pause and you will be prompted to enter the battle. If you accept, you will fight the battle directly, if you decline the battle will resolve on its own. You will not be prompted to enter very small battles (involving only 1-2 ships on one side).</p>
+<p>When your fleet runs into an enemy fleet (unless either one is retreating), the game will pause and you will be prompted to enter the battle. If you accept, you will fight the battle directly, if you decline, the battle will resolve on its own. You will not be prompted to enter very small battles (involving only 1-2 ships on one side).</p>
 
 <p>Before the battle begins, you can choose how to group your ships into units. You can do this by setting the number of light, medium, and heavy ship groups you want. Making more groups will give you more control but also make the battle more tedious and complicated.</p>
 
@@ -232,6 +232,8 @@ You have four resources at your disposal, indicated at the bottom of the user in
 <img style="width:60%; max-width:800px" src="images/battlegroups.jpg">
 
 <p>To select a unit, click on its icon, click on a ship belonging to that unit, or drag a box over it. Shift+clicking will select multiple units. Right click to send a unit to a position, and shift+right click to send it on a path with multiple waypoints. Backspace to stop movement.</p>
+
+<p><b>The fastest and easiest way to select multiple units is to hit shift+number keys. For example to select units 1 and 2 at the same time, hold down shift and just type 1,2</b></p>
 
 <img style="width:60%; max-width:800px" src="images/battle.jpg">
 
@@ -260,7 +262,6 @@ You have four resources at your disposal, indicated at the bottom of the user in
 <p><b>Targeting</b></p>
 
 <p>By default Heavy ships will target the largest enemy ship, Medium ships will target the closest, and light ships the weakest. You can select this manually.</p>
-
 
 <img style="width:40%; max-width:500px" src="images/targeting.jpg">
 
